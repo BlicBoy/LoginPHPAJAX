@@ -2,7 +2,7 @@
 
 >Será apenas necessário criar uma base de dados com o nome "teste", uma tabela com o 
 >nome "utiliz" com os campos "id","email","passsword" e terá de alterar os dados
->de acesso a base de dados no ficheiro "scriptPHP/login.php"
+>de acesso a base de dados no ficheiro "scriptPHP/config.php"
 
 
 **BlicBoy - 2022**

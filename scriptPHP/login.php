@@ -1,12 +1,6 @@
 <?php
 
-$ip = "localhost"; //(hostname)
-$username = "root";
-$password = "";
-$database = "teste";
-$port = 3306;
-
-$conn = mysqli_connect($ip,$username,$password,$database,$port);
+include_once 'config.php';
 
 $email = $_POST["email"];
 $password = $_POST["password"];
@@ -22,5 +16,7 @@ if($conn)
 }else{
     echo 'error';
 }
+
+$conn -> close();
 
 ?>
