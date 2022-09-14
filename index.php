@@ -39,45 +39,6 @@
 
 
 
-    <!-- The Modal -->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Adicionar Utilizador</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-
-                    <!--Alerta de Erro -->
-                    <div class="alert alert-danger" style="display: none;" id="error-alert">
-                        <strong>Error!</strong> <span id="txt-error"></span>
-                    </div>
-
-                    <!-- Alerta de Sucesso -->
-                    <div class="alert alert-success" style="display: none;" id="success-alert">
-                        <strong>Sucesso!</strong> <span id="txt-success"></span>
-                    </div>
-
-                    <div class="mb-3 mt-3">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="pwd" class="form-label">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                    </div>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-dark" id="bt-adicionar-modal" onclick="addModal()">Adicionar</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 

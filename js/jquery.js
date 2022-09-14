@@ -37,6 +37,10 @@ function limpaTexto() {
     clearAlerts()
 }
 
+function reloadPage(){
+    window.location.reload(true)
+}
+
 //Adicionar DB via Modal Bootstrap 5
 function addModal() {
 
