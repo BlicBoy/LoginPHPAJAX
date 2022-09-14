@@ -24,6 +24,8 @@
         <input type="password" name="password" id="password-add" placeholder="Password" style="display: none;"><br>
         <button type="submit" id="button-add" style="display: none;">Adicionar</button>
 
+        <button type="submit" id="table" onclick="table()">Ver Tabelas</button>
+
         <p>Info: <span id="txtInfo"></span></p>
 
 </body>
