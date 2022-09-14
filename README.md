@@ -1,4 +1,4 @@
-<h3>Formulário de Login usando PHP,AJAX,JQUERY,HTML</h3>
+<h3>Manipular Base de dados usando PHP e AJAX </h3>
 
 >Será apenas necessário criar uma base de dados com o nome "teste", uma tabela com o 
 >nome "utiliz" com os campos "id","email","passsword" e terá de alterar os dados
