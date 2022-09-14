@@ -14,17 +14,30 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <br>
-    <div class="container mt-3">
+    <div class="container mt-3" >
         <h2>Utilizadores da Base de Dados</h2>
         <hr>
         <?php include("scriptPHP/dataTable.php"); ?>
         <hr>
         <button type="button" onclick="limpaTexto()" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Adicionar</button>
         <br>
-        <!-- Alerta de Error -->
-
     </div>
+
+
 
     <!-- The Modal -->
     <div class="modal" id="myModal">
