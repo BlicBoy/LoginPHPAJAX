@@ -102,9 +102,18 @@ function editarData() {
 
                 if (response == "success") {
                     //update da informação que esta dentro da tabela
-                    console.log("Sucesso - Dados Alterados!")
-                    $("#" + id).children('td[data-target=email]').text(email);
-                    $('#myModalUpdate').modal('toggle');
+                    console.log("Sucesso - Dados Alterados!");
+
+                    //limpa caixas de texto
+                    const inputs = document.querySelectorAll('#email-update, #pwd-update,#userId')
+                    inputs.forEach(input => {
+                        input.value = '';
+                    });
+
+
+                    $("#" + id).children('td[data-target=email]').text(email); //altera email na tabela
+                    $('#myModalUpdate').modal('toggle');//fecha o modal
+
                 } else {
                     clearAlerts()
                     errorModal("Erro ao alterar dados!")
