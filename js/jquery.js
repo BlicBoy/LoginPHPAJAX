@@ -85,18 +85,17 @@ $(document).ready(function(){
         if(id != ""){
             $.ajax({
                 type:"POST",
-                url: "scriptPHP/delete",
+                url: "scriptPHP/delete.php",
                 data: {id:id},
                 success: function(response){
-                    if(response == "success")
-                    {
-                        console.log("Sucesso - Dados Eliminados!");
-                        reloadPage()
-                    }else{
-                        console.log("Erro ao eliminar!")
-                        alert('Erro ao Eliminar!')
-                    }
-                    
+                  if(response == "success")
+                  {
+                      console.log("Sucesso - Dados Eliminados!");
+                      reloadPage()
+                  }else{
+                      console.log("Erro ao eliminar!")
+                      alert('Erro ao Eliminar!')
+                  }
                 }
             })
         }
@@ -162,12 +161,6 @@ function editarData() {
     }
 
 }
-
-
-
-
-
-
 
 
 
