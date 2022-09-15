@@ -75,6 +75,34 @@ function addModal() {
 
 }
 
+//delete dados
+$(document).ready(function(){
+    $(document).on('click','a[data-role=delete]', function(){
+        var id = $(this).data('id')
+
+        console.log("Delete id: "+id)
+
+        if(id != ""){
+            $.ajax({
+                type:"POST",
+                url: "scriptPHP/delete",
+                data: {id:id},
+                success: function(response){
+                    if(response == "success")
+                    {
+                        console.log("Sucesso - Dados Eliminados!");
+                        reloadPage()
+                    }else{
+                        console.log("Erro ao eliminar!")
+                        alert('Erro ao Eliminar!')
+                    }
+                    
+                }
+            })
+        }
+    })
+});
+
 //editar os dados (carrega os dados para dentro do modal)
 $(document).ready(function () {
     $(document).on('click', 'a[data-role=update]', function () {
@@ -88,7 +116,6 @@ $(document).ready(function () {
         $('#myModalUpdate').modal('toggle');
     })
 });
-
 
 //editar dados (editar no DB e editar na tabela (sem reload de pagina))
 function editarData() {
