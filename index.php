@@ -18,7 +18,7 @@
         <div class="container-fluid">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link active"  id="index" href="#" onclick="esconder()">Utilizadores</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -28,7 +28,7 @@
     </nav>
 
     <br>
-    <div class="container mt-3" >
+    <div class="container mt-3" id = "index-body">
         <h2>Utilizadores da Base de Dados</h2>
         <hr>
         <?php include("scriptPHP/dataTable.php"); ?>

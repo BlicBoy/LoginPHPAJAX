@@ -1,3 +1,5 @@
+const { nodeName } = require("jquery");
+
 //limpa se existir alertas
 function clearAlerts() {
     var error = document.getElementById("error-alert")
@@ -116,6 +118,21 @@ $(document).ready(function () {
     })
 });
 
+
+
+
+
+function esconder(){
+    var display = document.getElementById("index-body")
+    $("#index").toggleClass("active")
+
+    if(display.style.display === "none"){
+        display.style.display = "block"
+    }else{
+        display.style.display = "none"
+    }
+}
+
 //editar dados (editar no DB e editar na tabela (sem reload de pagina))
 function editarData() {
 
@@ -161,9 +178,6 @@ function editarData() {
     }
 
 }
-
-
-
 
 
 //adicionar class
